@@ -12,6 +12,7 @@ var (
 	ErrNotFound	= errors.New("task not found")
 	ErrConflict	= errors.New("task conflict")
 	ErrInternal = errors.New("internal repository error")
+	ErrInvalidData = errors.New("invalid data")
 )
 
 type TaskRepository interface {
@@ -31,6 +32,10 @@ type FileData struct{
 	Version int  			`json:"version"`
 	Tasks 	[]*domain.Task 	`json:"tasks"`
 }
+
+// func NewFileRepo(config FileRepoConfig) (TaskRepository, error) {
+// 	return &fileRepo{config: config}, nil
+// }
 
 
 
