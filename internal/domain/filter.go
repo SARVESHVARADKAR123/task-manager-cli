@@ -16,6 +16,7 @@ type TaskFilter struct{
 	Limit int
 	Offset int
 	SortBy string
+	
 	Asc bool
 }
 
