@@ -177,7 +177,6 @@ func (s *TaskService) CompleteTask(ctx context.Context, id domain.TaskID) error 
         return err
     }
 
-    
     return nil 
 }
 
