@@ -11,7 +11,6 @@ type TaskRepository interface{
 	Get(ctx context.Context,id domain.TaskID) (*domain.Task,error)
 	Delete(ctx context.Context,id domain.TaskID) error
 	List(ctx context.Context,filter domain.TaskFilter) ([]*domain.Task,error)
-	
 
 }
 	
